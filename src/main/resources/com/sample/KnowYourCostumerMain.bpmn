@@ -19,11 +19,13 @@
     <endEvent id="_jbpm-unique-0" name="End" >
         <terminateEventDefinition />
     </endEvent>
-    <userTask id="_jbpm-unique-1" name="Revesion inicial" >
+    <userTask id="_jbpm-unique-1" name="Revesion Inicial" >
       <ioSpecification>
         <dataInput id="_jbpm-unique-1_NodeNameInput" name="NodeName" />
+        <dataInput id="_jbpm-unique-1_TaskNameInput" name="TaskName" />
         <inputSet>
           <dataInputRefs>_jbpm-unique-1_NodeNameInput</dataInputRefs>
+          <dataInputRefs>_jbpm-unique-1_TaskNameInput</dataInputRefs>
         </inputSet>
         <outputSet>
         </outputSet>
@@ -35,8 +37,15 @@
           <to xsi:type="tFormalExpression">_jbpm-unique-1_NodeNameInput</to>
         </assignment>
       </dataInputAssociation>
+      <dataInputAssociation>
+        <targetRef>_jbpm-unique-1_TaskNameInput</targetRef>
+        <assignment>
+          <from xsi:type="tFormalExpression">Revision</from>
+          <to xsi:type="tFormalExpression">_jbpm-unique-1_TaskNameInput</to>
+        </assignment>
+      </dataInputAssociation>
     </userTask>
-    <userTask id="_jbpm-unique-2" name="Revesion supervisor" >
+    <userTask id="_jbpm-unique-2" name="Revesion Supervisor" >
       <ioSpecification>
         <dataInput id="_jbpm-unique-2_NodeNameInput" name="NodeName" />
         <inputSet>
