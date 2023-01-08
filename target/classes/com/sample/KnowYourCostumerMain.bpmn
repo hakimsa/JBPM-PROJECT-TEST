@@ -74,49 +74,49 @@
   <bpmndi:BPMNDiagram>
     <bpmndi:BPMNPlane bpmnElement="com.sample.bpmn" >
       <bpmndi:BPMNShape bpmnElement="_1" >
-        <dc:Bounds x="117" y="-6" width="48" height="48" />
+        <dc:Bounds x="430" y="16" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-0" >
-        <dc:Bounds x="856" y="23" width="48" height="48" />
+        <dc:Bounds x="203" y="417" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-1" >
-        <dc:Bounds x="65" y="259" width="148" height="48" />
+        <dc:Bounds x="380" y="96" width="148" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-2" >
-        <dc:Bounds x="303" y="262" width="168" height="48" />
+        <dc:Bounds x="370" y="176" width="168" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-3" >
-        <dc:Bounds x="779" y="145" width="196" height="48" />
+        <dc:Bounds x="16" y="337" width="423" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-4" >
-        <dc:Bounds x="710" y="348" width="423" height="48" />
+        <dc:Bounds x="471" y="337" width="423" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-5" >
-        <dc:Bounds x="568" y="265" width="48" height="48" />
+        <dc:Bounds x="430" y="256" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-3-_jbpm-unique-0" >
-        <di:waypoint x="877" y="169" />
-        <di:waypoint x="880" y="47" />
+        <di:waypoint x="227" y="361" />
+        <di:waypoint x="227" y="441" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_1-_jbpm-unique-1" >
-        <di:waypoint x="141" y="18" />
-        <di:waypoint x="139" y="283" />
+        <di:waypoint x="454" y="40" />
+        <di:waypoint x="454" y="120" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-1-_jbpm-unique-2" >
-        <di:waypoint x="139" y="283" />
-        <di:waypoint x="387" y="286" />
+        <di:waypoint x="454" y="120" />
+        <di:waypoint x="454" y="200" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-5-_jbpm-unique-3" >
-        <di:waypoint x="592" y="289" />
-        <di:waypoint x="877" y="169" />
+        <di:waypoint x="454" y="280" />
+        <di:waypoint x="227" y="361" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-5-_jbpm-unique-4" >
-        <di:waypoint x="592" y="289" />
-        <di:waypoint x="921" y="372" />
+        <di:waypoint x="454" y="280" />
+        <di:waypoint x="682" y="361" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-2-_jbpm-unique-5" >
-        <di:waypoint x="387" y="286" />
-        <di:waypoint x="592" y="289" />
+        <di:waypoint x="454" y="200" />
+        <di:waypoint x="454" y="280" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
