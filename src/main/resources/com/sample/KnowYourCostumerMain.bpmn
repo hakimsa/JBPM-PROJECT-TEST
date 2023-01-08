@@ -15,7 +15,7 @@
   <process processType="Private" isExecutable="true" id="com.sample.bpmn" name="Sample Process" tns:packageName="defaultPackage" >
 
     <!-- nodes -->
-    <startEvent id="_1"  isInterrupting="true"/>
+    <startEvent id="_1" name=""  isInterrupting="true"/>
     <endEvent id="_jbpm-unique-0" name="End" >
         <terminateEventDefinition />
     </endEvent>
@@ -62,7 +62,7 @@
         </assignment>
       </dataInputAssociation>
     </userTask>
-    <scriptTask id="_jbpm-unique-3" name="Notification apartenr CC" >
+    <scriptTask id="_jbpm-unique-3" name="Notification al partaner-CC" >
       <script></script>
     </scriptTask>
     <scriptTask id="_jbpm-unique-4" name="Presister datos en sistema clientes" >
@@ -89,7 +89,7 @@
         <dc:Bounds x="203" y="417" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-1" >
-        <dc:Bounds x="380" y="96" width="148" height="48" />
+        <dc:Bounds x="380" y="96" width="245" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-2" >
         <dc:Bounds x="370" y="176" width="168" height="48" />
@@ -109,10 +109,10 @@
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_1-_jbpm-unique-1" >
         <di:waypoint x="454" y="40" />
-        <di:waypoint x="454" y="120" />
+        <di:waypoint x="502" y="120" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-1-_jbpm-unique-2" >
-        <di:waypoint x="454" y="120" />
+        <di:waypoint x="502" y="120" />
         <di:waypoint x="454" y="200" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-5-_jbpm-unique-3" >
