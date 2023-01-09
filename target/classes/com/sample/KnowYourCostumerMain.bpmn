@@ -15,7 +15,7 @@
   <process processType="Private" isExecutable="true" id="com.sample.bpmn" name="Sample Process" tns:packageName="defaultPackage" >
 
     <!-- nodes -->
-    <startEvent id="_1"  isInterrupting="true"/>
+    <startEvent id="_1" name="user"  isInterrupting="true"/>
     <endEvent id="_jbpm-unique-0" name="End" >
         <terminateEventDefinition />
     </endEvent>
@@ -33,7 +33,7 @@
       <dataInputAssociation>
         <targetRef>_jbpm-unique-1_NodeNameInput</targetRef>
         <assignment>
-          <from xsi:type="tFormalExpression">Revesion inicial</from>
+          <from xsi:type="tFormalExpression">Revesion Inicial</from>
           <to xsi:type="tFormalExpression">_jbpm-unique-1_NodeNameInput</to>
         </assignment>
       </dataInputAssociation>
@@ -57,18 +57,26 @@
       <dataInputAssociation>
         <targetRef>_jbpm-unique-2_NodeNameInput</targetRef>
         <assignment>
-          <from xsi:type="tFormalExpression">Revesion supervisor</from>
+          <from xsi:type="tFormalExpression">Revesion Supervisor</from>
           <to xsi:type="tFormalExpression">_jbpm-unique-2_NodeNameInput</to>
         </assignment>
       </dataInputAssociation>
     </userTask>
-    <scriptTask id="_jbpm-unique-3" name="Notification apartenr CC" >
+    <scriptTask id="_jbpm-unique-3" name="Notification al partaner-CC" >
       <script></script>
     </scriptTask>
     <scriptTask id="_jbpm-unique-4" name="Presister datos en sistema clientes" >
       <script></script>
     </scriptTask>
     <complexGateway id="_jbpm-unique-5" name="Gateway" gatewayDirection="Diverging" />
+    <userTask id="_jbpm-unique-1" name="Revision segundaria" >
+      <ioSpecification>
+        <inputSet>
+        </inputSet>
+        <outputSet>
+        </outputSet>
+      </ioSpecification>
+    </userTask>
 
     <!-- connections -->
     <sequenceFlow id="_jbpm-unique-3-_jbpm-unique-0" sourceRef="_jbpm-unique-3" targetRef="_jbpm-unique-0" />
@@ -77,6 +85,7 @@
     <sequenceFlow id="_jbpm-unique-5-_jbpm-unique-3" sourceRef="_jbpm-unique-5" targetRef="_jbpm-unique-3" />
     <sequenceFlow id="_jbpm-unique-5-_jbpm-unique-4" sourceRef="_jbpm-unique-5" targetRef="_jbpm-unique-4" />
     <sequenceFlow id="_jbpm-unique-2-_jbpm-unique-5" sourceRef="_jbpm-unique-2" targetRef="_jbpm-unique-5" />
+    <sequenceFlow id="_jbpm-unique-1-_jbpm-unique-1" sourceRef="_jbpm-unique-1" targetRef="_jbpm-unique-1" />
 
   </process>
 
@@ -86,46 +95,53 @@
         <dc:Bounds x="430" y="16" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-0" >
-        <dc:Bounds x="203" y="417" width="48" height="48" />
+        <dc:Bounds x="203" y="497" width="48" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-1" >
-        <dc:Bounds x="380" y="96" width="148" height="48" />
+        <dc:Bounds x="332" y="96" width="245" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-2" >
-        <dc:Bounds x="370" y="176" width="168" height="48" />
+        <dc:Bounds x="370" y="256" width="168" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-3" >
-        <dc:Bounds x="16" y="337" width="423" height="48" />
+        <dc:Bounds x="16" y="417" width="423" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-4" >
-        <dc:Bounds x="471" y="337" width="423" height="48" />
+        <dc:Bounds x="471" y="417" width="423" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNShape bpmnElement="_jbpm-unique-5" >
-        <dc:Bounds x="430" y="256" width="48" height="48" />
+        <dc:Bounds x="430" y="336" width="48" height="48" />
+      </bpmndi:BPMNShape>
+      <bpmndi:BPMNShape bpmnElement="_jbpm-unique-1" >
+        <dc:Bounds x="317" y="176" width="275" height="48" />
       </bpmndi:BPMNShape>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-3-_jbpm-unique-0" >
-        <di:waypoint x="227" y="361" />
         <di:waypoint x="227" y="441" />
+        <di:waypoint x="227" y="521" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_1-_jbpm-unique-1" >
         <di:waypoint x="454" y="40" />
         <di:waypoint x="454" y="120" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-1-_jbpm-unique-2" >
-        <di:waypoint x="454" y="120" />
         <di:waypoint x="454" y="200" />
+        <di:waypoint x="454" y="280" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-5-_jbpm-unique-3" >
-        <di:waypoint x="454" y="280" />
-        <di:waypoint x="227" y="361" />
+        <di:waypoint x="454" y="360" />
+        <di:waypoint x="227" y="441" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-5-_jbpm-unique-4" >
-        <di:waypoint x="454" y="280" />
-        <di:waypoint x="682" y="361" />
+        <di:waypoint x="454" y="360" />
+        <di:waypoint x="682" y="441" />
       </bpmndi:BPMNEdge>
       <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-2-_jbpm-unique-5" >
-        <di:waypoint x="454" y="200" />
         <di:waypoint x="454" y="280" />
+        <di:waypoint x="454" y="360" />
+      </bpmndi:BPMNEdge>
+      <bpmndi:BPMNEdge bpmnElement="_jbpm-unique-1-_jbpm-unique-1" >
+        <di:waypoint x="454" y="120" />
+        <di:waypoint x="454" y="200" />
       </bpmndi:BPMNEdge>
     </bpmndi:BPMNPlane>
   </bpmndi:BPMNDiagram>
